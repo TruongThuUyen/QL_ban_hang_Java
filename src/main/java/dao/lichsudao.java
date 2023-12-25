@@ -49,9 +49,6 @@ public class lichsudao {
 		while(rs.next())
 		{
 			java.util.Date date ;
-			
-//			Date ngaymua = rs.getDate("NgayLap");
-	
 			long mahd = rs.getLong("MaHD");
 			long slm = rs.getLong("SoLuong");
 			float tongtien = rs.getFloat("TongTien");

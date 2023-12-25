@@ -12,13 +12,10 @@ public class khachhangdao {
 	{
 		CoSo kn = new CoSo();
 		kn.KetNoi();
-		//Tao cau lenh SQL
 		String sql = "select * from KhachHang where TenDN=? and Password=?";
-		//Tao cau lenh 
 		PreparedStatement cmd = kn.cn.prepareStatement(sql);
 		cmd.setString(1, username);
 		cmd.setString(2, password);
-		//Thuc hien cau lenh
 		ResultSet rs = cmd.executeQuery();
 		
 		khachhangbean kh = null;

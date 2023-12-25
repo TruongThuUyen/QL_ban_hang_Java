@@ -238,8 +238,6 @@ public class sanphamdao {
 		cmd.setString(6, maloai);
 		cmd.setString(7, ma);
 		int kq = cmd.executeUpdate();
-//		cmd.close();
-//		kn.cn.close();
 		return kq;
 	}
 	
